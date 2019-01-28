@@ -29,6 +29,15 @@ class ExamplePopup extends React.Component {
         <button className="btn" onClick={this.openForm} style={{ cursor: 'pointer' }}>
           Click to open the popup!
         </button>
+        <br />
+        <br />
+        <div style={{ height: '125px', background: '#003648', color: '#fff', padding: '20px' }}>
+          some other content
+          <br />
+          but i'm blocked
+          <br />
+          <button onclick={() => window.alert('clicked')}>so you can't click me</button>
+        </div>
       </div>
     );
   }
